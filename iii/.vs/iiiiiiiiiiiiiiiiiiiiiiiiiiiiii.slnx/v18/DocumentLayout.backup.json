@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Linn\\Desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|c:\\users\\linn\\desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|c:\\users\\linn\\desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "income.cs",
+              "DocumentMoniker": "C:\\Users\\Linn\\Desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\income.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\income.cs",
+              "ToolTip": "C:\\Users\\Linn\\Desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\income.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\income.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T11:53:53.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Linn\\Desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\Program.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Program.cs",
+              "ToolTip": "C:\\Users\\Linn\\Desktop\\lab1\\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\\laboratorni_evsukov\\Program.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T11:52:19.721Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

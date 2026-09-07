@@ -1,0 +1,7 @@
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\bin\Release\laboratorni_evsukov.exe.config
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\bin\Release\laboratorni_evsukov.exe
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\bin\Release\laboratorni_evsukov.pdb
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\obj\Release\laboratorni_evsukov.csproj.AssemblyReference.cache
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\obj\Release\laboratorni_evsukov.csproj.CoreCompileInputs.cache
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\obj\Release\laboratorni_evsukov.exe
+C:\Users\Linn\Desktop\lab1\iiiiiiiiiiiiiiiiiiiiiiiiiiiiii\laboratorni_evsukov\obj\Release\laboratorni_evsukov.pdb
