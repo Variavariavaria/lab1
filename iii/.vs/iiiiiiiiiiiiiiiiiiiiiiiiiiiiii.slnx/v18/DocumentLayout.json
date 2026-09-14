@@ -23,14 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "income.cs",
-              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\income.cs",
-              "RelativeDocumentMoniker": "laboratorni_evsukov\\income.cs",
-              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\income.cs",
-              "RelativeToolTip": "laboratorni_evsukov\\income.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Title": "Income.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Income.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Income.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Income.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Income.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T11:53:53.743Z"
+              "WhenOpened": "2026-09-07T11:53:53.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,7 +41,7 @@
               "RelativeDocumentMoniker": "laboratorni_evsukov\\Program.cs",
               "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Program.cs",
               "RelativeToolTip": "laboratorni_evsukov\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-07T11:52:19.721Z",
               "EditorCaption": ""
