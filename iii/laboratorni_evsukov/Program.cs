@@ -13,7 +13,6 @@ namespace laboratorni_evsukov
 
         static void Main(string[] args)
         {
-            bool shit = true;
         List<income> incomes = new List<income>();
         void TTTell(income income)
         {
@@ -45,19 +44,15 @@ namespace laboratorni_evsukov
                         {
                             try
                             {
-                                Console.WriteLine("Напишите дату в формате ДД.ММ.ГГГГ:");
-                                string rawDate = Console.ReadLine();
-                                DateTime cookedDate = DateTime.Parse(rawDate);
-
-                                Console.WriteLine("Напишите, откуда эти деньги пришли:");
-                                string sorc = Console.ReadLine();
-
-                                Console.WriteLine("Напишите количество рублей (целое число):");
-                                string rawSize = Console.ReadLine();
-                                int amout = int.Parse(rawSize);
-
-                                income bruh = new income(cookedDate, sorc, amout);
-                                incomes.Add(bruh);
+                                Console.WriteLine("Создайте запись форматом: ДД.ММ.ГГГГ  Источник_Денег  Целый_Размер_Пополнения");
+                                string rawdata = Console.ReadLine();
+                                char[] bruh = { ' ' };
+                                string[] mediumData = rawdata.Split(bruh, StringSplitOptions.RemoveEmptyEntries);
+                                DateTime cookedDate = DateTime.Parse(mediumData[0]);
+                                string sorc = mediumData[1];
+                                int amout = int.Parse(mediumData[2]);
+                                income boo = new income(cookedDate, sorc, amout);
+                                incomes.Add(boo);
                             }
                             catch { break; }
                             break;
@@ -67,9 +62,8 @@ namespace laboratorni_evsukov
                             break;
                         }
                 }
-
             } 
-            while (shit == true);
+            while (true);
         }
     }
 }
