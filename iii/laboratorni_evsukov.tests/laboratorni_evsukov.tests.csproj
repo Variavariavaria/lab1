@@ -132,6 +132,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="IncomeApplicationTests.cs" />
     <Compile Include="IncomeParserTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

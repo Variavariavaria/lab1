@@ -15,5 +15,8 @@ namespace LaboratorniEvsukov
                 CurrencyCatalog.Default());
             app.Run();
         }
+
     }
+
+
 }
