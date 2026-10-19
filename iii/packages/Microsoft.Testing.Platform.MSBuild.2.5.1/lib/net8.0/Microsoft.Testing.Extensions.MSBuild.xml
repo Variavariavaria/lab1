@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Testing.Extensions.MSBuild</name>
+    </assembly>
+    <members>
+        <member name="P:Microsoft.Testing.Extensions.MSBuild.Resources.ExtensionResources.MSBuildExtensionsDescription">
+            <summary>Extension used to pass parameters from MSBuild node and the hosts.</summary>
+        </member>
+        <member name="P:Microsoft.Testing.Extensions.MSBuild.Resources.ExtensionResources.MSBuildCommandLineProviderDisplayName">
+            <summary>MSBuild integration</summary>
+        </member>
+        <member name="P:Microsoft.Testing.Extensions.MSBuild.Resources.ExtensionResources.MSBuildNodeOptionDescription">
+            <summary>Used to pass the MSBuild node handle.</summary>
+        </member>
+        <member name="T:Microsoft.Testing.Platform.MSBuild.MSBuildExtensions">
+            <summary>
+            Extension methods for adding MSBuild support to the test application builder.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.MSBuild.MSBuildExtensions.AddMSBuild(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder)">
+            <summary>
+            Adds MSBuild support to the test application builder.
+            </summary>
+            <param name="builder">The test application builder.</param>
+        </member>
+        <member name="T:Microsoft.Testing.Platform.MSBuild.TestingPlatformBuilderHook">
+            <summary>
+            This class is used by Microsoft.Testing.Platform.MSBuild to hook into the Testing Platform Builder to add MSBuild support.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.MSBuild.TestingPlatformBuilderHook.AddExtensions(Microsoft.Testing.Platform.Builder.ITestApplicationBuilder,System.String[])">
+            <summary>
+            Adds MSBuild support to the Testing Platform Builder.
+            </summary>
+            <param name="testApplicationBuilder">The test application builder.</param>
+            <param name="_">The command line arguments.</param>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeClient.#ctor(System.String,Microsoft.Testing.Platform.Helpers.IEnvironment,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Testing.Platform.IPC.NamedPipeClient"/> class connecting to the named pipe
+            <paramref name="name"/>.
+            </summary>
+            <param name="name">The OS-level named pipe name to connect to.</param>
+            <param name="environment">The environment abstraction used for process-exit on connection loss.</param>
+            <param name="exitProcessOnConnectionLoss">
+            When <see langword="true"/> (the default) a lost connection - the server disconnecting while we write a
+            request or before it sends a response - terminates the process via <see cref="M:Microsoft.Testing.Platform.Helpers.IEnvironment.Exit(System.Int32)"/>.
+            This is the right behavior for the primary data pipe: if we cannot talk to the host there is no way to
+            recover. Set it to <see langword="false"/> for auxiliary channels (e.g. the reverse server-control pipe)
+            where a dropped connection should surface as an exception the caller can handle cooperatively rather than
+            killing the whole test host.
+            </param>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeConnectionBase.WriteMessageAsync(System.IO.Stream,Microsoft.Testing.Platform.IPC.INamedPipeSerializer,System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Serializes <paramref name="message"/> using <paramref name="serializer"/>, frames it with a
+            4-byte size header and 4-byte serializer-ID prefix, writes the frame to <paramref name="stream"/>,
+            flushes, and (on Windows) waits for the pipe to drain.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeConnectionBase.ReadNextMessageAsync(System.IO.Stream,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Reads one complete framed message from <paramref name="stream"/>, deserializes it, and returns
+            the result.  Returns <see langword="null"/> when the stream reaches EOF (peer disconnected).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeConnectionBase.DisposeBuffers">
+            <summary>Disposes the shared serialization and message buffers.</summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServer.#ctor(System.String,System.Func{Microsoft.Testing.Platform.IPC.IRequest,System.Threading.Tasks.Task{Microsoft.Testing.Platform.IPC.IResponse}},Microsoft.Testing.Platform.Helpers.IEnvironment,Microsoft.Testing.Platform.Logging.ILogger,Microsoft.Testing.Platform.Helpers.ITask,System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Testing.Platform.IPC.NamedPipeServer"/> class, optionally authorizing a set
+            of security identities on the pipe in addition to the creating user.
+            </summary>
+            <param name="name">The friendly pipe name.</param>
+            <param name="callback">The request handler.</param>
+            <param name="environment">The environment abstraction.</param>
+            <param name="logger">The logger.</param>
+            <param name="task">The task abstraction.</param>
+            <param name="authorizedSecurityIdentities">
+            Security identities that must additionally be able to connect, or <see langword="null"/>/empty for
+            the default behavior.
+            </param>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServer.#ctor(Microsoft.Testing.Platform.IPC.PipeNameDescription,System.Func{Microsoft.Testing.Platform.IPC.IRequest,System.Threading.Tasks.Task{Microsoft.Testing.Platform.IPC.IResponse}},Microsoft.Testing.Platform.Helpers.IEnvironment,Microsoft.Testing.Platform.Logging.ILogger,Microsoft.Testing.Platform.Helpers.ITask,System.Int32,System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Testing.Platform.IPC.NamedPipeServer"/> class, optionally authorizing a set
+            of security identities on the pipe in addition to the creating user.
+            </summary>
+            <param name="pipeNameDescription">The pipe name.</param>
+            <param name="callback">The request handler.</param>
+            <param name="environment">The environment abstraction.</param>
+            <param name="logger">The logger.</param>
+            <param name="task">The task abstraction.</param>
+            <param name="maxNumberOfServerInstances">The maximum number of concurrent server instances.</param>
+            <param name="authorizedSecurityIdentities">
+            Security identities that must additionally be able to connect, or <see langword="null"/>/empty for
+            the default behavior. Every entry must satisfy
+            <see cref="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.IsAuthorizableSandboxedApplicationIdentity(System.String)"/> — on Windows the only identity
+            that may be added is that of a single sandboxed application, which the OS expresses as an
+            AppContainer package SID. The caller is responsible for filtering and reporting rejected entries.
+            Ignored on operating systems that cannot express such an identity.
+            </param>
+            <param name="cancellationToken">The cancellation token.</param>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServer.CreateServerStream(System.String,System.Int32,System.Collections.Generic.IReadOnlyList{System.String})">
+            <summary>
+            Creates the underlying server stream, using the hardened Windows path only when a caller actually
+            asked for extra authorization. Every other run — including every run on a non-Windows
+            operating system — keeps the untouched <c>PipeOptions.CurrentUserOnly</c> pipe.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServer.InternalLoopAsync(System.Threading.CancellationToken)">
+            <summary>
+            4 bytes = message size
+            ------- Payload -------
+            4 bytes = serializer id
+            x bytes = object buffer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServer.GetPipeName(System.String)">
+            <summary>
+            Computes the OS-level named pipe name for a friendly <paramref name="name"/>.
+            </summary>
+            <remarks>
+            Invariant (important for cross-version / cross-repo compatibility): the process that <b>creates</b> the
+            pipe resolves the directory locally and hands the <b>fully-resolved</b> path to the peer (via an
+            environment variable, a command-line argument, or the dotnet-test handshake). Peers use that path verbatim
+            and never recompute it. Do NOT turn the directory into a convention that both sides derive independently
+            from a shared friendly name/env var - doing so would couple the SDK and test-host versions. Because only
+            the creator's resolution is ever used, a difference in TESTINGPLATFORM_PIPE_DIRECTORY / TMPDIR between the
+            two processes is harmless.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity">
+            <summary>
+            Windows-only helpers that create a controller named pipe whose discretionary access control list
+            (DACL) keeps the current-user protection of <c>PipeOptions.CurrentUserOnly</c> while
+            additionally authorizing a small, explicitly requested set of AppContainer package SIDs.
+            </summary>
+            <remarks>
+            <para>
+            <b>Why this exists.</b> On Windows, .NET implements <c>PipeOptions.CurrentUserOnly</c> with a
+            security descriptor whose owner is the creating token's owner SID and whose DACL contains a single
+            ACE granting that same SID full control. An AppContainer (UWP, or a WinUI app configured for
+            AppContainer) runs with a <i>restricted</i> token: Windows performs the normal access check against
+            the token's user/group SIDs <i>and</i> a second check against the token's restricting SIDs, which for
+            an AppContainer contain the package SID. Access is granted only when both checks succeed, so a DACL
+            that names only the user SID denies the AppContainer client even though it belongs to the same
+            signed-in user. Knowing the pipe name is therefore not enough — the package SID must appear in the
+            DACL. See https://learn.microsoft.com/windows/win32/secauthz/restricted-tokens.
+            </para>
+            <para>
+            <b>Security model.</b> The descriptor produced here is deliberately minimal and fully explicit:
+            </para>
+            <list type="bullet">
+              <item>
+                Owner and group are the current token's <i>owner</i> SID, exactly like
+                <c>PipeOptions.CurrentUserOnly</c>. This preserves the elevation split (an elevated token's
+                owner is <c>BUILTIN\Administrators</c>, a non-elevated one's is the user) and keeps the client-side
+                <c>PipeOptions.CurrentUserOnly</c> owner validation working.
+              </item>
+              <item>The DACL is protected (<c>P</c>), so no inherited ACE can widen it.</item>
+              <item>The owner SID gets <c>FILE_ALL_ACCESS</c>-equivalent rights (the same mask .NET grants).</item>
+              <item>
+                Every authorized package SID gets only <see cref="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.PipeAccessRightsReadWriteSynchronize"/> — read,
+                write, read the security descriptor (needed by the client-side owner validation) and synchronize.
+                Notably it does <i>not</i> include <c>FILE_CREATE_PIPE_INSTANCE</c>, so an authorized package can
+                never create another instance of the pipe and impersonate the controller.
+              </item>
+              <item>
+                Only genuine AppContainer SIDs may be authorized (see <see cref="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.IsAuthorizableSandboxedApplicationIdentity(System.String)"/>).
+                The catch-all <c>ALL APPLICATION PACKAGES</c> / <c>ALL RESTRICTED APPLICATION PACKAGES</c> SIDs,
+                user SIDs, group SIDs and <c>Everyone</c> are rejected by construction, so the extension point that
+                feeds this type can only ever widen access to one specific packaged application.
+              </item>
+              <item>
+                The pipe additionally rejects remote clients (<c>PIPE_REJECT_REMOTE_CLIENTS</c>), which the default
+                .NET pipe does not do.
+              </item>
+              <item>
+                No mandatory integrity label is emitted, so the pipe keeps the controller's own integrity level and
+                Mandatory Integrity Control remains a second gate behind the DACL. An AppContainer client is
+                admitted by its package-SID ACE alone.
+              </item>
+            </list>
+            <para>
+            The implementation goes through <c>CreateNamedPipeW</c> rather than <c>PipeSecurity</c> because the
+            managed ACL types are not part of the <c>netstandard2.0</c> surface this assembly also builds for, and
+            because <c>PipeOptions.CurrentUserOnly</c> cannot be combined with an explicit descriptor.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.SandboxedApplicationPipeNamePrefix">
+            <summary>
+            The namespace segment Windows requires for named pipes opened by packaged/AppContainer processes.
+            <c>NamedPipeClientStream</c> adds <c>\\.\pipe\</c> itself, so peers exchange
+            <c>LOCAL\&lt;name&gt;</c>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.AllApplicationPackagesSid">
+            <summary>
+            The well-known <c>ALL APPLICATION PACKAGES</c> SID. Granting it would let every packaged
+            application on the machine reach the controller pipe, so it is never authorized.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.AllRestrictedApplicationPackagesSid">
+            <summary>
+            The well-known <c>ALL RESTRICTED APPLICATION PACKAGES</c> SID. Rejected for the same reason as
+            <see cref="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.AllApplicationPackagesSid"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.AppContainerSidPrefix">
+            <summary>
+            The identifier-authority/sub-authority prefix shared by every AppContainer SID
+            (<c>SECURITY_APP_PACKAGE_AUTHORITY</c> + <c>SECURITY_APP_PACKAGE_BASE_RID</c>).
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.PipeAccessRightsFullControl">
+            <summary>
+            <c>PipeAccessRights.FullControl</c>. This is the exact mask .NET grants to the owner when
+            <c>PipeOptions.CurrentUserOnly</c> is used, so the hardened descriptor is a strict superset
+            of the default one only by the additional package ACEs.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.PipeAccessRightsReadWriteSynchronize">
+            <summary>
+            <c>PipeAccessRights.ReadWrite | PipeAccessRights.Synchronize</c>: the minimum a client needs to
+            open the pipe, exchange messages, and read the security descriptor for its own
+            <c>PipeOptions.CurrentUserOnly</c> owner validation. Deliberately excludes
+            <c>FILE_CREATE_PIPE_INSTANCE</c> (<c>0x4</c>), <c>WRITE_DAC</c>, <c>WRITE_OWNER</c> and
+            <c>DELETE</c>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.IsSupported">
+            <summary>
+            Gets a value indicating whether the hardened pipe path can be used on the current operating system.
+            AppContainers, SIDs and named-pipe DACLs are Windows concepts; every other platform keeps the
+            existing pipe implementation untouched.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.GetPipeNameForSandboxedApplication(System.String)">
+            <summary>
+            Qualifies <paramref name="pipeName"/> for the login-session-local named-pipe namespace required by
+            packaged/AppContainer clients. The operation is idempotent.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.IsAuthorizableSandboxedApplicationIdentity(System.String)">
+            <summary>
+            Returns <see langword="true"/> when <paramref name="securityIdentifier"/> identifies a
+            <em>single sandboxed application</em> and may therefore be authorized on the controller pipe. On
+            Windows that is an AppContainer SID — a package SID or a child-AppContainer SID.
+            </summary>
+            <remarks>
+            This is the platform-side least-privilege guard: it is applied to whatever an extension asks for, so
+            a buggy or hostile extension cannot turn the extension point into a way of granting access to
+            <c>Everyone</c>, <c>Authenticated Users</c>, another user, or every packaged application on the
+            machine. It is an allow-list rather than a deny-list precisely so that an identity nobody thought
+            about is refused by default. The check is purely syntactic on purpose — it is a policy filter, not a
+            proof that the SID exists.
+            </remarks>
+            <param name="securityIdentifier">The SID in SDDL string form (<c>S-1-15-2-…</c>).</param>
+            <returns><see langword="true"/> when the SID may be added to the pipe DACL.</returns>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.Normalize(System.String)">
+            <summary>
+            Normalizes a SID string to the canonical upper-case form used in the security descriptor, so the
+            same SID written in different cases produces the same DACL.
+            </summary>
+            <param name="securityIdentifier">The SID in SDDL string form.</param>
+            <returns>The normalized SID.</returns>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.GetCurrentProcessOwnerSid">
+            <summary>
+            Returns the current process token's <i>owner</i> SID — the very SID
+            <c>PipeOptions.CurrentUserOnly</c> uses — in SDDL string form.
+            </summary>
+            <remarks>
+            The owner (rather than the user) SID is what preserves the elevation split: an elevated token's owner
+            is <c>BUILTIN\Administrators</c>, so an elevated controller's pipe is not reachable from a
+            non-elevated process of the same user, and vice versa.
+            </remarks>
+            <returns>The owner SID.</returns>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.CreateServerStream(System.String,System.Int32,System.Collections.Generic.IReadOnlyList{System.String})">
+            <summary>
+            Creates a named pipe server stream whose DACL grants the current token's owner full control and each
+            identity in <paramref name="authorizedSecurityIdentities"/> the minimum rights required to connect
+            and exchange messages. Every identity is validated here, at the point it is composed into the
+            security descriptor.
+            </summary>
+            <param name="pipeName">The pipe name, without the <c>\\.\pipe\</c> prefix.</param>
+            <param name="maxNumberOfServerInstances">The maximum number of concurrent server instances.</param>
+            <param name="authorizedSecurityIdentities">The identities to authorize.</param>
+            <returns>An asynchronous, not-yet-connected server stream.</returns>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.CreateServerStreamWithExplicitSecurityDescriptor(System.String,System.Int32,System.String)">
+            <summary>
+            Creates a named pipe server stream protected by a caller-supplied SDDL security descriptor.
+            </summary>
+            <remarks>
+            <strong>This overload performs no validation</strong> — the descriptor is passed to Windows verbatim.
+            It exists so tests can exercise arbitrary descriptors, including deliberately malformed ones. Product
+            code must use <see cref="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.CreateServerStream(System.String,System.Int32,System.Collections.Generic.IReadOnlyList{System.String})"/>, which validates
+            every identity at the point it is composed. The name is deliberately unlike the validating overload
+            so this one can never be selected by overload-resolution accident.
+            </remarks>
+            <param name="pipeName">The pipe name, without the <c>\\.\pipe\</c> prefix.</param>
+            <param name="maxNumberOfServerInstances">The maximum number of concurrent server instances.</param>
+            <param name="securityDescriptorSddl">The security descriptor in SDDL form.</param>
+            <returns>An asynchronous, not-yet-connected server stream.</returns>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.NamedPipeServerSecurity.BuildSecurityDescriptor(System.String,System.Collections.Generic.IReadOnlyList{System.String})">
+            <summary>
+            Builds the SDDL security descriptor for the controller pipe.
+            </summary>
+            <remarks>
+            This is the sink where caller-supplied strings are concatenated into a security descriptor, so it
+            validates every identity itself rather than trusting that a caller already did. That is deliberate:
+            a caller that validates one enumeration of a sequence and then hands the sequence on cannot
+            guarantee the second enumeration yields the same values, and an unvalidated value containing
+            <c>)</c> or <c>(</c> would break out of its ACE and inject additional ones. Validating at the point
+            of concatenation makes that class of bug impossible regardless of how the sequence behaves.
+            </remarks>
+            <param name="ownerSid">The current token's owner SID, which owns the pipe and gets full control.</param>
+            <param name="authorizedSecurityIdentities">
+            The identities that additionally get the minimum connect/exchange rights.
+            </param>
+            <returns>The SDDL string.</returns>
+            <exception cref="T:System.ArgumentException">
+            An entry does not identify a single sandboxed application.
+            </exception>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.Serializers.BaseSerializer.ReadFields(System.IO.Stream,System.Func{System.UInt16,System.Int32,System.Boolean})">
+            <summary>
+            Reads the standard field envelope (a <c>ushort</c> field count followed by that many
+            <c>[ushort id][int size][payload]</c> triples) and dispatches each field to <paramref name="tryReadField"/>.
+            When the callback returns <see langword="false"/> (an unrecognized field id), the field payload is skipped so
+            that the reader stays aligned and remains forward-compatible with newer producers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.Serializers.BaseSerializer.ReadFields``1(System.IO.Stream,``0,System.Func{System.IO.Stream,System.UInt16,System.Int32,``0,System.Nullable{``0}})">
+            <summary>
+            Reads the standard field envelope while threading a value-type state through a non-capturing callback.
+            Returning <see langword="null"/> from the callback marks the field as unrecognized.
+            </summary>
+            <typeparam name="TState">The value-type state accumulated while fields are read.</typeparam>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.Serializers.BaseSerializer.WriteListPayload``1(System.IO.Stream,System.UInt16,``0[],System.Action{System.IO.Stream,``0})">
+            <summary>
+            Writes a length-prefixed list payload using the deferred-size-backfill protocol: the field id, a reserved
+            4-byte size slot, the element count, then each element via <paramref name="writeItem"/>. The reserved slot is
+            finally patched with the payload size. A <see langword="null"/> or empty list writes nothing.
+            </summary>
+            <typeparam name="T">The element type of the list being serialized.</typeparam>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.Serializers.BaseSerializer.TryReadExecutionScopedField(System.IO.Stream,System.UInt16,System.Int32,System.String@,System.String@)">
+            <summary>
+            Matches the two leading collection-envelope fields (<c>ExecutionId</c> id 1 / <c>InstanceId</c> id 2) shared by
+            the four 'dotnet test' list-carrying messages payloads, assigning the value into <paramref name="executionId"/>
+            or <paramref name="instanceId"/> and returning <see langword="true"/> when the field is one of them. The caller
+            handles its type-specific message-list field ids when this returns <see langword="false"/>. Kept as a
+            <see langword="ref"/>-based matcher so it adds no allocation on the hot per-test IPC read path.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.IPC.Serializers.BaseSerializer.WriteExecutionScopedHeader(System.IO.Stream,System.String,System.String,System.UInt16)">
+            <summary>
+            Writes the shared collection-envelope header: a field-count prefix (the <c>ExecutionId</c> and <c>InstanceId</c>
+            fields when non-<see langword="null"/> plus <paramref name="payloadFieldCount"/>), followed by the
+            <c>ExecutionId</c> (id 1) and <c>InstanceId</c> (id 2) fields. The caller writes its type-specific message
+            list(s) directly afterwards. Kept callback-free so it adds no closure/delegate allocation on the hot per-test
+            IPC write path.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.RoslynString.IsNullOrEmpty(System.String)">
+            <inheritdoc cref="M:System.String.IsNullOrEmpty(System.String)"/>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.RoslynString.IsNullOrWhiteSpace(System.String)">
+            <inheritdoc cref="M:System.String.IsNullOrWhiteSpace(System.String)"/>
+        </member>
+        <member name="T:Microsoft.Testing.Platform.Helpers.ExitCode">
+            <summary>
+            We use positive exit codes for failure because POSIX/BASH exit codes are unsigned 8-bit integers.
+            On POSIX systems the standard exit code is 0 for success and any number from 1 to 255 for anything else.
+            See the <see href="https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-troubleshooting#exit-codes">troubleshooting documentation</see> for general exit-code guidance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.Success">
+            <summary>
+            The test run succeeded.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.GenericFailure">
+            <summary>
+            The test run failed for a reason not represented by a more specific exit code.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.AtLeastOneTestFailed">
+            <summary>
+            At least one test failed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.TestSessionAborted">
+            <summary>
+            The test session was aborted.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.InvalidPlatformSetup">
+            <summary>
+            The test platform setup or extension configuration is invalid.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.InvalidCommandLine">
+            <summary>
+            The command-line arguments are invalid.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.TestHostProcessExitedNonGracefully">
+            <summary>
+            The test host process exited without completing its shutdown protocol, or its IPC-reported exit code differed from its OS exit code.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.ZeroTests">
+            <summary>
+            No tests counted as executed under the active zero-tests policy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.MinimumExpectedTestsPolicyViolation">
+            <summary>
+            Fewer tests ran than required by the minimum-expected-tests policy.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.TestAdapterTestSessionFailure">
+            <summary>
+            The test adapter reported a test-session failure.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.DependentProcessExited">
+            <summary>
+            A process monitored by the dependent-process listener exited.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.IncompatibleProtocolVersion">
+            <summary>
+            The communicating test-platform processes use incompatible protocol versions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.TestExecutionStoppedForMaxFailedTests">
+            <summary>
+            Test execution stopped after reaching the maximum-failed-tests limit.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.CoverageThresholdFailed">
+            <summary>
+            One or more code-coverage thresholds were not met.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Testing.Platform.Helpers.ExitCode.TestExecutionStoppedAtDeadline">
+            <summary>
+            Test execution stopped early because the configured deadline was approaching, so not every test ran.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.Helpers.TimeSpanParser.GetRegex">
+            <remarks>
+            Pattern:<br/>
+            <code>^(?&lt;value&gt;\\d+(?:\\.\\d+)?)(?:\\s*(?&lt;suffix&gt;ms|mils?|milliseconds?|s|secs?|seconds?|m|mins?|minutes?|h|hours?|d|days?))?$</code><br/>
+            Options:<br/>
+            <code>RegexOptions.IgnoreCase | RegexOptions.CultureInvariant</code><br/>
+            Explanation:<br/>
+            <code>
+            ○ Match if at the beginning of the string.<br/>
+            ○ "value" capture group.<br/>
+                ○ Match a Unicode digit greedily at least once.<br/>
+                ○ Optional (greedy).<br/>
+                    ○ Match '.'.<br/>
+                    ○ Match a Unicode digit greedily at least once.<br/>
+            ○ Optional (greedy).<br/>
+                ○ Match a whitespace character atomically any number of times.<br/>
+                ○ "suffix" capture group.<br/>
+                    ○ Match with 13 alternative expressions.<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Mm].<br/>
+                            ○ Match a character in the set [Ss].<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Mm].<br/>
+                            ○ Match a character in the set [Ii].<br/>
+                            ○ Match a character in the set [Ll].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Mm].<br/>
+                            ○ Match a character in the set [Ii].<br/>
+                            ○ Match a character in the set [Ll] exactly 2 times.<br/>
+                            ○ Match a character in the set [Ii].<br/>
+                            ○ Match a character in the set [Ss].<br/>
+                            ○ Match a character in the set [Ee].<br/>
+                            ○ Match a character in the set [Cc].<br/>
+                            ○ Match a character in the set [Oo].<br/>
+                            ○ Match a character in the set [Nn].<br/>
+                            ○ Match a character in the set [Dd].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a character in the set [Ss].<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Ss].<br/>
+                            ○ Match a character in the set [Ee].<br/>
+                            ○ Match a character in the set [Cc].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Ss].<br/>
+                            ○ Match a character in the set [Ee].<br/>
+                            ○ Match a character in the set [Cc].<br/>
+                            ○ Match a character in the set [Oo].<br/>
+                            ○ Match a character in the set [Nn].<br/>
+                            ○ Match a character in the set [Dd].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a character in the set [Mm].<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Mm].<br/>
+                            ○ Match a character in the set [Ii].<br/>
+                            ○ Match a character in the set [Nn].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Mm].<br/>
+                            ○ Match a character in the set [Ii].<br/>
+                            ○ Match a character in the set [Nn].<br/>
+                            ○ Match a character in the set [Uu].<br/>
+                            ○ Match a character in the set [Tt].<br/>
+                            ○ Match a character in the set [Ee].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a character in the set [Hh].<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Hh].<br/>
+                            ○ Match a character in the set [Oo].<br/>
+                            ○ Match a character in the set [Uu].<br/>
+                            ○ Match a character in the set [Rr].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+                        ○ Match a character in the set [Dd].<br/>
+                        ○ Match a sequence of expressions.<br/>
+                            ○ Match a character in the set [Dd].<br/>
+                            ○ Match a character in the set [Aa].<br/>
+                            ○ Match a character in the set [Yy].<br/>
+                            ○ Match a character in the set [Ss] greedily, optionally.<br/>
+            ○ Match if at the end of the string or if before an ending newline.<br/>
+            </code>
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Testing.Platform.Helpers.TimeSpanParser.TryParseRequireSuffix(System.String,System.TimeSpan@)">
+            <summary>
+            Parses a time value. Inputs without an explicit unit suffix (e.g. a bare number like "200")
+            are rejected. Use this overload for options where the unit must be explicit.
+            </summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.GetRegex_0">
+            <summary>Custom <see cref="T:System.Text.RegularExpressions.Regex"/>-derived type for the GetRegex method.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.GetRegex_0.Instance">
+            <summary>Cached, thread-safe singleton instance.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.GetRegex_0.#ctor">
+            <summary>Initializes the instance.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory">
+            <summary>Provides a factory for creating <see cref="T:System.Text.RegularExpressions.RegexRunner"/> instances to be used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory.CreateInstance">
+            <summary>Creates an instance of a <see cref="T:System.Text.RegularExpressions.RegexRunner"/> used by methods on <see cref="T:System.Text.RegularExpressions.Regex"/>.</summary>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory.Runner">
+            <summary>Provides the runner that contains the custom logic implementing the specified regular expression.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory.Runner.Scan(System.ReadOnlySpan{System.Char})">
+            <summary>Scan the <paramref name="inputSpan"/> starting from base.runtextstart for the next match.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory.Runner.TryFindNextPossibleStartingPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Search <paramref name="inputSpan"/> starting from base.runtextpos for the next location a match could possibly start.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if a possible match was found; false if no more matches are possible.</returns>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.GetRegex_0.RunnerFactory.Runner.TryMatchAtCurrentPosition(System.ReadOnlySpan{System.Char})">
+            <summary>Determine whether <paramref name="inputSpan"/> at base.runtextpos is a match for the regular expression.</summary>
+            <param name="inputSpan">The text being scanned by the regular expression.</param>
+            <returns>true if the regular expression matches at the current position; otherwise, false.</returns>
+        </member>
+        <member name="T:System.Text.RegularExpressions.Generated.Utilities">
+            <summary>Helper methods used by generated <see cref="T:System.Text.RegularExpressions.Regex"/>-derived implementations.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout">
+            <summary>Default timeout value set in <see cref="T:System.AppContext"/>, or <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout"/> if none was set.</summary>
+        </member>
+        <member name="F:System.Text.RegularExpressions.Generated.Utilities.s_hasTimeout">
+            <summary>Whether <see cref="F:System.Text.RegularExpressions.Generated.Utilities.s_defaultTimeout"/> is non-infinite.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Utilities.StackPop(System.Int32[],System.Int32@,System.Int32@,System.Int32@)">
+            <summary>Pops 2 values from the backtracking stack.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Utilities.StackPush(System.Int32[]@,System.Int32@,System.Int32)">
+            <summary>Pushes 1 value onto the backtracking stack.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Utilities.StackPush(System.Int32[]@,System.Int32@,System.Int32,System.Int32)">
+            <summary>Pushes 2 values onto the backtracking stack.</summary>
+        </member>
+        <member name="M:System.Text.RegularExpressions.Generated.Utilities.StackPush(System.Int32[]@,System.Int32@,System.Int32,System.Int32,System.Int32)">
+            <summary>Pushes 3 values onto the backtracking stack.</summary>
+        </member>
+        <member name="T:ExtensionVersion">
+            <summary>
+            Extension version, created at build time.
+            </summary>
+        </member>
+    </members>
+</doc>

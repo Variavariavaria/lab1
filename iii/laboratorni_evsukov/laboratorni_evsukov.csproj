@@ -43,12 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Income.cs" />
+    <Compile Include="App\IncomeApplication.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Models\IncomeKind.cs" />
+    <Compile Include="Models\IncomeBetweenCountries.cs" />
+    <Compile Include="Models\IncomeInternational.cs" />
+    <Compile Include="Models\Income.cs" />
+    <Compile Include="Parsing\ParseResult.cs" />
+    <Compile Include="Parsing\IncomeParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage\IncomeRepository.cs" />
+    <Compile Include="UI\MenuRenderer.cs" />
+    <Compile Include="UI\SystemConsole.cs" />
+    <Compile Include="UI\IConsole.cs" />
+    <Compile Include="Validation\CurrencyCatalog.cs" />
+    <Compile Include="Validation\InputValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

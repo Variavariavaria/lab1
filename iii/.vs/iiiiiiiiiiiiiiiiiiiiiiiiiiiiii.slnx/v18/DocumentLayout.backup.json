@@ -3,12 +3,76 @@
   "WorkspaceRootPath": "C:\\github\\lab1\\iii\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|c:\\github\\lab1\\iii\\laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|c:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\incomeparsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|solutionrelative:laboratorni_evsukov.tests\\incomeparsertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\models\\incomebetweencountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\models\\incomebetweencountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\models\\incomeinternational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\models\\incomeinternational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\models\\incomekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\models\\incomekind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\app\\incomeapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\app\\incomeapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|c:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\incomeapplicationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|solutionrelative:laboratorni_evsukov.tests\\incomeapplicationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\parsing\\incomeparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\parsing\\incomeparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\ui\\menurenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\ui\\menurenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\ui\\systemconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\ui\\systemconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\ui\\iconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\ui\\iconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\storage\\incomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\storage\\incomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\parsing\\parseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\parsing\\parseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\validation\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\validation\\inputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\validation\\currencycatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\validation\\currencycatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|c:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3FB06182-A9F2-43C8-919D-95C15AE5FFC8}|laboratorni_evsukov.tests\\laboratorni_evsukov.tests.csproj|solutionrelative:laboratorni_evsukov.tests\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +82,240 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Income.cs",
-              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Income.cs",
-              "RelativeDocumentMoniker": "laboratorni_evsukov\\Income.cs",
-              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Income.cs",
-              "RelativeToolTip": "laboratorni_evsukov\\Income.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "IncomeParserTests.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\IncomeParserTests.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov.tests\\IncomeParserTests.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\IncomeParserTests.cs",
+              "RelativeToolTip": "laboratorni_evsukov.tests\\IncomeParserTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T11:53:53.743Z",
+              "WhenOpened": "2026-10-19T11:52:35.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "IncomeApplication.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\App\\IncomeApplication.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\App\\IncomeApplication.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\App\\IncomeApplication.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\App\\IncomeApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:22:25.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Income.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\Income.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Models\\Income.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\Income.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Models\\Income.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T10:59:41.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IncomeInternational.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeInternational.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Models\\IncomeInternational.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeInternational.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeInternational.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:01:24.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IncomeBetweenCountries.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeBetweenCountries.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Models\\IncomeBetweenCountries.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeBetweenCountries.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeBetweenCountries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:02:15.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IncomeKind.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeKind.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Models\\IncomeKind.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Models\\IncomeKind.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:03:33.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IncomeApplicationTests.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\IncomeApplicationTests.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov.tests\\IncomeApplicationTests.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\IncomeApplicationTests.cs",
+              "RelativeToolTip": "laboratorni_evsukov.tests\\IncomeApplicationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:52:35.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IncomeParser.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Parsing\\IncomeParser.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Parsing\\IncomeParser.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Parsing\\IncomeParser.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Parsing\\IncomeParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:08:00.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MenuRenderer.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\MenuRenderer.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\UI\\MenuRenderer.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\MenuRenderer.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\UI\\MenuRenderer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:21:16.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Program.cs",
               "RelativeDocumentMoniker": "laboratorni_evsukov\\Program.cs",
               "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Program.cs",
               "RelativeToolTip": "laboratorni_evsukov\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T11:52:19.721Z",
+              "WhenOpened": "2026-10-19T11:23:46.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\App.config",
+              "RelativeDocumentMoniker": "laboratorni_evsukov.tests\\App.config",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov.tests\\App.config",
+              "RelativeToolTip": "laboratorni_evsukov.tests\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-10-19T11:52:35.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SystemConsole.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\SystemConsole.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\UI\\SystemConsole.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\SystemConsole.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\UI\\SystemConsole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:20:27.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IConsole.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\IConsole.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\UI\\IConsole.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\UI\\IConsole.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\UI\\IConsole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:19:59.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IncomeRepository.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Storage\\IncomeRepository.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Storage\\IncomeRepository.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Storage\\IncomeRepository.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Storage\\IncomeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:18:59.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CurrencyCatalog.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Validation\\CurrencyCatalog.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Validation\\CurrencyCatalog.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Validation\\CurrencyCatalog.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Validation\\CurrencyCatalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:17:38.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InputValidator.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Validation\\InputValidator.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Validation\\InputValidator.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Validation\\InputValidator.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Validation\\InputValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:17:05.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ParseResult.cs",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Parsing\\ParseResult.cs",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\Parsing\\ParseResult.cs",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\Parsing\\ParseResult.cs",
+              "RelativeToolTip": "laboratorni_evsukov\\Parsing\\ParseResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T11:10:03.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\App.config",
+              "RelativeDocumentMoniker": "laboratorni_evsukov\\App.config",
+              "ToolTip": "C:\\github\\lab1\\iii\\laboratorni_evsukov\\App.config",
+              "RelativeToolTip": "laboratorni_evsukov\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-10-19T11:07:52.688Z",
               "EditorCaption": ""
             }
           ]
