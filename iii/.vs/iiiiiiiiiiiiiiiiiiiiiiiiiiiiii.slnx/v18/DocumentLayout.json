@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|c:\\github\\lab1\\iii\\laboratorni_evsukov\\ui\\menurenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|C:\\github\\lab1\\iii\\laboratorni_evsukov\\ui\\menurenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51C303F1-F04F-4D57-8BA8-49E2A199E0D3}|laboratorni_evsukov\\laboratorni_evsukov.csproj|solutionrelative:laboratorni_evsukov\\ui\\menurenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -111,8 +111,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\UI\\IConsole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:19:59.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:19:59.078Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\UI\\MenuRenderer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:21:16.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:21:16.497Z"
             },
             {
               "$type": "Document",
@@ -137,8 +135,7 @@
               "RelativeToolTip": "laboratorni_evsukov.tests\\IncomeParserTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:52:35.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:52:35.242Z"
             },
             {
               "$type": "Document",
@@ -150,8 +147,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:23:46.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:23:46.066Z"
             },
             {
               "$type": "Document",
@@ -163,8 +159,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\App\\IncomeApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:22:25.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:22:25.058Z"
             },
             {
               "$type": "Document",
@@ -176,8 +171,7 @@
               "RelativeToolTip": "laboratorni_evsukov.tests\\IncomeApplicationTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:52:35.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:52:35.279Z"
             },
             {
               "$type": "Document",
@@ -189,8 +183,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeInternational.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:01:24.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:01:24.06Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Storage\\IncomeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:18:59.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:18:59.427Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeBetweenCountries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:02:15.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:02:15.746Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Models\\Income.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T10:59:41.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T10:59:41.827Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Parsing\\ParseResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:10:03.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:10:03.678Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Parsing\\IncomeParser.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:08:00.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:08:00.269Z"
             },
             {
               "$type": "Document",
@@ -267,8 +255,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Validation\\InputValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:17:05.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:17:05.11Z"
             },
             {
               "$type": "Document",
@@ -280,8 +267,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Validation\\CurrencyCatalog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:17:38.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:17:38.242Z"
             },
             {
               "$type": "Document",
@@ -293,8 +279,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\Models\\IncomeKind.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:03:33.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:03:33.999Z"
             },
             {
               "$type": "Document",
@@ -306,8 +291,7 @@
               "RelativeToolTip": "laboratorni_evsukov.tests\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-10-19T11:52:35.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:52:35.268Z"
             },
             {
               "$type": "Document",
@@ -319,8 +303,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\UI\\SystemConsole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T11:20:27.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:20:27.692Z"
             },
             {
               "$type": "Document",
@@ -332,8 +315,7 @@
               "RelativeToolTip": "laboratorni_evsukov\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-10-19T11:07:52.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T11:07:52.688Z"
             }
           ]
         }
